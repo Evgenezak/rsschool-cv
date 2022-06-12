@@ -1,1 +1,166 @@
-Ha
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font: 400 20px 'Tiro Devanagari Marathi', sans-serif;
+    line-height: 1.5;
+    color: #b0b7e3;
+}
+.box {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+}
+.header {
+    background-color: #C3FBD8;
+}
+.nav {
+    display: flex;
+    margin: 0 auto;
+}
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+li {
+    display: list-item;
+}
+.header-container a:link, .header-container a:visited{
+    display: flex;
+    position: relative;
+    padding: 0 12px;
+    font: 300 20px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.header-container a:hover {
+    color: #FFFFFF;
+	text-decoration: none;
+	background-color: #f3a197;
+}
+ul {
+    margin-left: 13px;
+	padding: 0px;
+}
+.main {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section {
+    width: calc(50% - 20px);
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #672f2f;
+  }
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  align-content: center;
+  text-align: center;  
+  text-transform: uppercase;
+}
+.section-div  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;  
+  text-transform: uppercase;
+}
+.section-english {
+    border-bottom: none;
+}
+.foto-profile {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  filter: grayscale(0.2) brightness(1.05);
+  transition: .3s;
+}
+h1 {
+  position: relative;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 10px;
+  line-height: 50px;
+  word-spacing: 3px;
+}
+.contacts-link a:link, .contacts-link a:visited {
+    color: #f3a197;
+    text-decoration: none;
+}
+.projects-link a:link, .projects-link a:visited {
+    color: #f3a197;
+    text-decoration: none;
+}
+.foter {
+    padding: 20px;
+    background-color: #C3FBD8;
+}
+.footer-div {
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    margin: 10px auto;
+    width: 100%;
+    color: #fff;
+}
+.footerleft {
+    justify-content: left;
+    margin: 30px;
+}
+.footerleft a:link, .footerleft a:visited {
+    color: #f3a197;
+    text-decoration: none;
+}
+
+.footer-div {
+    background-color: #C3FBD8;
+    justify-content: space-between;
+}
+.footerright {
+    justify-content: right;
+    width: 121px;
+    height: 45px;
+}
+.rsjs {
+  display: flex;
+  margin: 30px auto;
+  width: 121px;
+  height: 45px;
+  background-image: url("./assets/rs_school_js.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (max-width: 1440px) {
+    .container {
+      padding: 0 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
